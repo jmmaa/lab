@@ -1,0 +1,26 @@
+(Critical Damage Multiplier * Element-related Multiplier * Skill Multiplier * Unsheathe Attack Multiplier * Stability * Proration * Skill-related Multiplier * Range Damage Multiplier * (0.7 if Player is affected by Lethargy Ailment or else 1) * Last Damage Multiplier * Combo-related Multiplier * Base Drop Gem Damage Reduction * (0.25 if Guarded or else 1) * Ultima Lion Rage Multiplier)
+
+
+
+cdmg_multi = 0000
+element_related = 0001
+skill_multi = 0010
+unsheathe_atk_multi = 0011
+stability = 0100
+prorate = 0101
+skill_related_multi = 0110
+range_damage_multi = 0111
+lethargy_reduction = 1000
+last_damage_multi = 1001
+combo_related = 1010
+base_drop_gem_reduction = 0011
+guard_reduction = 1100
+ultima_lion_multi = 1101
+
+
+cdmg_multi * prorate * last_dmg_multi * combo_related_multi
+= 00011011
+
+
+prorate * last_dmg_multi * combo_related_multi * cdmg_multi
+= 01101100

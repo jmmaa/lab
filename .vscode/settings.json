@@ -1,0 +1,8 @@
+{
+  "editor.defaultFormatter": "charliermarsh.ruff",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticSeverityOverrides": {
+      "reportGeneralTypeIssues": "none"
+    }
+  
+}
