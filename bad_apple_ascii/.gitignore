@@ -1,2 +1,8 @@
 ./ascii_frames
 ./frames
+__pycache__
+.venv
+ascii_frames
+frames
+bad_apple.mp4
+bad_apple.mp3
