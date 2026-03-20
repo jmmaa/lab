@@ -1,4 +1,5 @@
 import os
+import time
 
 import ascii_magic
 from create_video_frames import FRAMES_DIRECTORY
@@ -16,3 +17,5 @@ for frame in frames:
     ascii_frame.to_file(
         f"{ASCII_FRAMES_DIRECTORY}/{count}.txt", monochrome=True, columns=120
     )
+
+    time.sleep(0.1)

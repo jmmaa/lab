@@ -1,0 +1,9 @@
+[tool.pyright]
+
+venv = ".venv"
+venvPath = "."
+
+[dependency-groups]
+dev = [
+    "aiofiles>=25.1.0",
+]

@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+# test files
+*Articles.csv*
+model.json
+text

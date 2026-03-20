@@ -21,6 +21,9 @@ async def main():
 
     file = "bad_apple.wav"
 
+    print(sd.query_devices())
+    print(sd.check_output_settings())
+
     print("\033[?25l\033[H\033[2Jloading frames...")
 
     ascii_frames = os.listdir("ascii_frames")
@@ -64,7 +67,7 @@ async def main():
 
     stream = sd.OutputStream(
         samplerate=fs,
-        device=5,
+        device=4,
         channels=data.shape[1],
         callback=callback,
         finished_callback=event.set,
